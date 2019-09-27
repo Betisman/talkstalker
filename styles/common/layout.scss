@@ -1,3 +1,12 @@
-.logo{
-    position: absolute;
+.layout{
+    .logo{
+        position: absolute;
+        top:15px;
+        left:15px;
+    }
+    nav{
+        position: absolute;
+        top:15px;
+        right: 15px;
+    }
 }

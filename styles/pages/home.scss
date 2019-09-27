@@ -2,4 +2,14 @@
     height: 100vh;
     background: url('/static/img/background.png') no-repeat center center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title{
+        font-size: 48px;
+        color:#fff;
+        font-weight: 500;
+        width: 80%;
+    }
 }

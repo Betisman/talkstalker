@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
-import * as Components from '../../common';
+import { Layout, Searchbar } from '../../common';
+import '../../../styles/pages/home.scss';
 
 const Home = () => {
   return (
@@ -10,14 +10,17 @@ const Home = () => {
         <title>Event Tracker || Home</title>
       </Head>
 
-      <Link href="/events">
-        <a>Events</a>
-      </Link>
-
-      <Components.Layout>
-        <div className="landing">landing page</div>
-      </Components.Layout>
+      <Layout>
+        <div className="landing">
+          <div className="landding_inner">
+            <h1 className="title">BESTE TECH EVENT SEARCH  ENGINE</h1>
+            <Searchbar />
+          </div>
+        
+        </div>
+      </Layout>
     </>
   );
 };
+     
 export default Home;
