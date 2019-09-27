@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Layout from '../components/Layout';
+import * as Components from '../components';
 
 const Home = () => (
   <>
@@ -8,11 +8,11 @@ const Home = () => (
       <title>Event Tracker || Home</title>
     </Head>
 
-    <Layout>
-      <div className="landing">
-        landing page
-      </div>
-    </Layout>
+    <Components.Layout>
+      <div className="landing">landing page</div>
+
+      <Components.Map></Components.Map>
+    </Components.Layout>
   </>
 );
 

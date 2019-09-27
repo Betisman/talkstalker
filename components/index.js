@@ -1,5 +1,4 @@
 import Layout from './Layout';
+import Map from './map';
 
-export {
-    Layout
-}
+export { Layout, Map };
