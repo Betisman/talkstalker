@@ -5,16 +5,16 @@ const Admin = () => {
   return(
     <div className="adminInfo info">
       <h2>My event</h2>
-      <p>name: GDG DevFest</p>
-      <p>date: 2020-01-19</p>
-      <p>location: Budapest</p>
-      <p>att: 1000 - 3000</p>
-      <p>ticket: $100</p>
+      <p>name: <span>GDG DevFest</span></p>
+      <p>date: <span>2020-01-19</span></p>
+      <p>location: <span>Budapest</span></p>
+      <p>att: <span>1000 - 3000</span></p>
+      <p>ticket: <span>$100</span></p>
       <div className="divider" />
       <div className="c4p">
         <h3>c4p</h3>
-        <p>start date: 2019-11-23</p>
-        <p>end date: 2019-11-30</p>
+        <p>start date: <span>2019-11-23</span></p>
+        <p>end date: <span>2019-11-30</span></p>
       </div>
     </div>
   );

@@ -11,6 +11,10 @@ const Marker = ({ event, setPopupInfo }) => {
     >
       <button
         className="marker-btn"
+        style={{
+          'background': 'transparent',
+          'border': 'none'
+        }}
         onClick={e => {
           e.preventDefault();
           setPopupInfo(event);
