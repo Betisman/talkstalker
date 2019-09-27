@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');
+
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.get('/events', (req, res) => {
   res.json([
@@ -27,7 +31,7 @@ app.get('/events', (req, res) => {
       cfpEndDate: '2019-10-31'
     },
     {
-      name: "c't <webdev>",
+      name: 'c\'t <webdev>',
       url: 'https://ctwebdev.de',
       startDate: '2020-02-04',
       endDate: '2020-02-06',
@@ -38,7 +42,7 @@ app.get('/events', (req, res) => {
       cfpEndDate: '2019-08-31'
     },
     {
-      name: "JSConf Hawai'i",
+      name: 'JSConf Hawai\'i',
       url: 'https://www.jsconfhi.com',
       startDate: '2020-02-05',
       endDate: '2020-02-07',
