@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Layout from '../components/Layout';
+import Layout from '../components/common/Layout';
+import '../styles/pages/home.scss';
 
 const Home = () => (
   <>
