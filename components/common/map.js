@@ -6,15 +6,14 @@ const MAPBOX_TOKEN =
 
 const Map = () => {
   const [viewport, setViewport] = React.useState({
-    width: '100vw',
-    height: '100vh',
+    width: 400,
+    height: 400,
     latitude: 47.498382,
     longitude: 19.040471,
     zoom: 8
   });
 
   const onViewportChange = viewport => {
-    console.log(viewport, 'viewport');
     setViewport(viewport);
   };
 
