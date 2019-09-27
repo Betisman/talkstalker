@@ -1,0 +1,12 @@
+.eventsPage{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-areas: 'search search' 'city city' 'filter filter' 'list map';
+    .searchbar{
+        grid-area: search;
+    }
+    .city{
+        grid-area: city;
+    }
+}

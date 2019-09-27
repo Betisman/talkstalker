@@ -8,11 +8,23 @@ const Layout = ({ children }) => {
     <div className="layout">
       <img src="/static/svg/LOGO.svg" alt="logo" className="logo" />
       <nav>
-        <Link href="/events">
-          <a>
+        <ul>
+          <li>
+            <Link href="/events">
+              <a>
           Events
-          </a>
-        </Link>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/events">
+              <a>
+              add Events
+              </a>
+            </Link>
+          </li>
+        </ul>
+    
       </nav>
       {children}
     </div>

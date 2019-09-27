@@ -1,10 +1,9 @@
 import React, { createContext, useState } from 'react';
 
-const SearchContext = createContext({});
+const SearchContext = createContext(null);
 
 const SearchProvider = ({ children }) => {
   const [city, setCity] = useState('');
-  console.log('city', city);
   const handleChangeCity = (city) => setCity(city);
   return(
     <SearchContext.Provider value={{
