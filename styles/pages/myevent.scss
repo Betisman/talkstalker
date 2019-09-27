@@ -101,5 +101,12 @@
                 object-fit: cover;
             }
         }
+        .r2{
+            display: flex;
+            flex-wrap: wrap;
+            figure{
+                width: 40%;
+            }
+        }
     }
 }
