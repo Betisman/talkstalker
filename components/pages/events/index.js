@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Layout, Map, EventList, Searchbar, City }  from '../../common';
 import { SearchContext } from '../../../context';
 import '../../../styles/pages/events.scss';
-import eventList from '../../common/eventsList';
 
 const Events = () => {
   const [data, setData] = React.useState(null);

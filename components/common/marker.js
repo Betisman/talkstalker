@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Marker as GLMarker } from 'react-map-gl';
 
-const Marker = event => {
+const Marker = ({ event, setPopupInfo }) => {
   return (
     <GLMarker
       key={Math.random + event.url}
@@ -13,6 +13,7 @@ const Marker = event => {
         className="marker-btn"
         onClick={e => {
           e.preventDefault();
+          setPopupInfo(event);
         }}
       >
         <img src="'../../static/svg/LOGO.svg" alt="Logo" />
