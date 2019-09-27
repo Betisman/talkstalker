@@ -5,7 +5,7 @@ import '../../styles/common/eventsList.scss';
 const eventList = event => {
   const { city } = useContext(SearchContext);
   return (
-    <div className="eventsListItem" key="event.name">
+    <div className="eventsListItem" key={`${event.name}`}>
       <div className="eventImg">
         <img src={`https://source.unsplash.com/1600x900/?${city}`} alt="img" />
       </div>

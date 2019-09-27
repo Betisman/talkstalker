@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import ReactMapGL from 'react-map-gl';
 
 import * as Components from '.';
@@ -15,18 +15,41 @@ const Map = ({ events }) => {
     zoom: 8
   });
 
+  const [top, setTop] = useState();
+
+  const map = useRef(null);
+
+  useEffect(()=>{
+    // if(map) {
+    //   const topPosition = map.current.getBoundingClientRect().top;
+    //   setTop(topPosition);
+    //   document.addEventListener('scroll', ()=>{
+    //     const topPosition = map.current.getBoundingClientRect().top;
+    //     setTop(topPosition);
+    //   });
+    // }
+   
+  }, []);
+
+
   const onViewportChange = viewport => {
     setViewport(viewport);
   };
 
   return (
-    <ReactMapGL
-      mapboxApiAccessToken={MAPBOX_TOKEN}
-      {...viewport}
-      onViewportChange={onViewportChange}
-    >
-      {events && events.map(Components.Marker)}
-    </ReactMapGL>
+    <div className="mapGraphContainer" ref={map}>
+      <div className="mapGraph">
+        <ReactMapGL
+          mapboxApiAccessToken={MAPBOX_TOKEN}
+          {...viewport}
+          onViewportChange={onViewportChange}
+        >
+          {events && events.map(Components.Marker)}
+        </ReactMapGL>
+      </div>
+      
+    </div>
+    
   );
 };
 
