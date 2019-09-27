@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Layout } from '../../common';
 import Admin from './admin';
+import Analytics from './analytics';
 import Speakers from './speakers';
 import '../../../styles/pages/myevent.scss';
 
-const menuItems = ['admin', 'talks', 'speakers', 'venue', ' catering', 'ticket', 'accomodation'];
+const menuItems = ['admin', 'analytics', 'talks', 'speakers', 'venue', ' catering', 'ticket', 'accomodation'];
 
 const MyEvent = () => {
     
@@ -24,7 +25,7 @@ const MyEvent = () => {
         </div>
         { topic === 'admin' && <Admin />}
         { topic === 'speakers' && <Speakers />}
-        { topic === 'admin' && <Admin />}
+        { topic === 'analytics' && <Analytics />}
         { topic === 'admin' && <Admin />}
         { topic === 'admin' && <Admin />}
         { topic === 'admin' && <Admin />}

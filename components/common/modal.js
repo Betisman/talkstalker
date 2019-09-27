@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
+import '../../styles/common/modal.scss';
 
 import { Form } from '.';
 
@@ -47,7 +48,7 @@ export default function SimpleModal() {
   return (
     <div>
       <p>Click to get the full Modal experience!</p>
-      <button type="button" onClick={handleOpen}>
+      <button type="button" onClick={handleOpen} className="c4pBtn">
         Call For Papers
       </button>
       <Modal

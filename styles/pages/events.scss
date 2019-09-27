@@ -3,7 +3,7 @@
   padding: 15px;
   grid-template-rows: 60px;
   grid-template-columns: repeat(2, 50%);
-  grid-template-areas: 'space space' 'search search' 'city city' 'filter filter' 'list map';
+  grid-template-areas: 'space space' 'search search' 'city city' 'list map';
   grid-column-gap: 25px;
   grid-row-gap: 50px;
   overflow: hidden;
@@ -20,8 +20,9 @@
   .eventsList {
     grid-area: list;
     margin-right: 15px;
-    height: 900px;
+    height: 100vh;
     overflow: scroll;
+    padding: 0 10px;
   }
   .mapGraphContainer {
     grid-area: map;

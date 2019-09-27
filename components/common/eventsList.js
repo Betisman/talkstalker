@@ -11,14 +11,14 @@ const eventList = event => {
       <div className="detail">
         <h1>{event.name}</h1>
         <a href={event.url}>
-          <p>Event url</p>
+          <p>See Event</p>
         </a>
         <p>start date: {new Date(event.startDate).toLocaleDateString()}</p>
         <p>end date: {new Date(event.endDate).toLocaleDateString()}</p>
         <p>{event.city}</p>
         <p>{event.twitter}</p>
         <Modal />
-        <p style={{ fontSize: '20px', marginBottom: '20px' }}>🍺</p>
+        <p>🍺 {event.beerPrice} €</p>
       </div>
     </div>
   );

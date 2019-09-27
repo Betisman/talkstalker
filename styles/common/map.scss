@@ -1,3 +1,9 @@
 .mapboxgl-map{
     position: fixed;
 }
+
+ .marker{
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
