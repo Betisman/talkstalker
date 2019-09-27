@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import axios from 'axios';
-import { Layout, Map, EventList, Searchbar, City }  from '../../common';
+import { Layout, Map, EventList, Searchbar, City } from '../../common';
 import { SearchContext } from '../../../context';
 import '../../../styles/pages/events.scss';
 
@@ -23,9 +23,7 @@ const Events = () => {
         <div className="eventsPage">
           <Searchbar />
           <City name={city} />
-          <div className="eventsList">
-            {data && data.map(EventList)}
-          </div>
+          <div className="eventsList">{data && data.map(EventList)}</div>
           <Map events={data} />
         </div>
       </Layout>
