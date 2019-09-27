@@ -5,7 +5,7 @@ import Analytics from './analytics';
 import Speakers from './speakers';
 import '../../../styles/pages/myevent.scss';
 
-const menuItems = ['admin', 'analytics', 'talks', 'speakers', 'venue', ' catering', 'ticket', 'accomodation'];
+const menuItems = ['admin', 'analytics', 'talks', 'speakers', 'venue', ' catering', 'ticket', 'accommodation'];
 
 const MyEvent = () => {
     

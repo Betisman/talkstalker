@@ -19,6 +19,19 @@ const Analytics = () => {
           <img src="/static/img/analytics03.png" alt="analytics" />
         </figure>
       </div>
+
+      <div className="r3">
+        <figure>
+          <img src="/static/img/analytics04.png" alt="analytics" />
+        </figure>
+      </div>
+
+      <div className="r4">
+        <figure>
+          <img src="/static/img/analytics05.png" alt="analytics" />
+        </figure>
+      </div>
+    
       
     </div>
   );

@@ -40,7 +40,7 @@ const Map = ({ events }) => {
               padding: '10px',
               left: '15px',
               top: '15px',
-              background: 'rgba(255,255,255,0.3)'
+              background: 'rgba(255,255,255,0.5)'
             }}
             positionOptions={{ enableHighAccuracy: true }}
             trackUserLocation
