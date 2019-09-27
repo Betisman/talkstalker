@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="980px" height="936px" viewBox="0 0 980 936" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-21.000000, -44.000000)" fill="#E3B212" fill-rule="nonzero">
+            <g id="1a5b1e4daae265b790965a275b53ae50" transform="translate(21.000000, 44.000000)">
+                <path d="M980,362.9 C980,371.5 974.9,381 964.7,391.2 L750.9,599.6 L801.6,894.1 C802,896.8 802.2,900.8 802.2,905.9 C802.2,914.1 800.1,921.1 796,926.8 C791.9,932.5 785.9,935.3 778,935.3 C770.5,935.3 762.7,932.9 754.4,928.2 L490,789.3 L225.6,928.3 C217,933 209.1,935.4 202,935.4 C193.8,935.4 187.6,932.6 183.4,926.9 C179.2,921.2 177.2,914.2 177.2,906 C177.2,903.6 177.6,899.7 178.4,894.2 L229,599.7 L14.7,391.1 C4.9,380.5 0,371.1 0,362.8 C0,348.3 11,339.2 33,335.7 L328.6,292.7 L461.1,24.7 C468.6,8.6 478.2,0.6 490,0.6 C501.8,0.6 511.4,8.6 518.9,24.7 L651.4,292.7 L947,335.7 C969,339.3 980,348.3 980,362.9 L980,362.9 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
