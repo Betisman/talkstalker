@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Layout from '../../common/Layout';
+import { Layout, Searchbar } from '../../common';
 import '../../../styles/pages/home.scss';
 
 const Home = () => (
@@ -11,7 +11,11 @@ const Home = () => (
 
     <Layout>
       <div className="landing">
-        BESTE TECH EVENT SEARCH  ENGINE
+        <div className="landding_inner">
+          <h1 className="title">BESTE TECH EVENT SEARCH  ENGINE</h1>
+          <Searchbar />
+        </div>
+        
       </div>
     </Layout>
   </>

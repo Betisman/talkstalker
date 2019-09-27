@@ -1,0 +1,28 @@
+.searchbar{
+    height: 38px;
+    input{
+        width: 500px;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 0;
+        border:none;
+        box-shadow: none;
+        padding-left: 15px;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        height: 100%;
+        box-sizing: border-box;
+        margin-left: 15px;
+        background: #16AE8E;
+        color:#fff;
+         border:none;
+        box-shadow: none;
+        cursor: pointer;
+    }
+   
+}
