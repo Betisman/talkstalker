@@ -18,6 +18,7 @@ const eventList = event => {
         <p>{event.city}</p>
         <p>{event.twitter}</p>
         <Modal />
+        <p style={{ fontSize: '20px', marginBottom: '20px' }}>🍺</p>
       </div>
     </div>
   );
