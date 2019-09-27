@@ -6,17 +6,16 @@ const Marker = event => {
   return (
     <GLMarker
       key={Math.random + event.url}
-      latitude={event.coordinates[0]}
-      longitude={event.coordinates[1]}
+      latitude={event.geometry.lat}
+      longitude={event.geometry.lng}
     >
       <button
         className="marker-btn"
         onClick={e => {
           e.preventDefault();
-          console.log(event, 'clicked');
         }}
       >
-        <img src="'../../static/svg/LOGO.svg" alt="Skate Park Icon" />
+        <img src="'../../static/svg/LOGO.svg" alt="Logo" />
       </button>
     </GLMarker>
   );

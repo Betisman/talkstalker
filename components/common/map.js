@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactMapGL from 'react-map-gl';
 
+import * as Components from '.';
+
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoiaXNtYWVsb2NhcmFtZWxvIiwiYSI6ImNrMTF0aDc3ZjBicHMzbm8wcjJsOGUwdWYifQ.VI-nu-5EG3cxAElp_xIKAg';
 
-const Map = () => {
+const Map = ({ events }) => {
   const [viewport, setViewport] = React.useState({
     width: '100vw',
     height: '100vh',
@@ -22,7 +24,9 @@ const Map = () => {
       mapboxApiAccessToken={MAPBOX_TOKEN}
       {...viewport}
       onViewportChange={onViewportChange}
-    />
+    >
+      {events && events.map(Components.Marker)}
+    </ReactMapGL>
   );
 };
 

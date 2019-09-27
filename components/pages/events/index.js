@@ -20,7 +20,7 @@ const Events = () => {
       <Components.Layout>
         <div>
           {data && data.map(Components.EventList)}
-          <Components.Map></Components.Map>
+          <Components.Map events={data}></Components.Map>
         </div>
       </Components.Layout>
     </>
