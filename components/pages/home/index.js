@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { Layout, Searchbar } from '../../common';
 import '../../../styles/pages/home.scss';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -15,7 +16,12 @@ const Home = () => {
           <div className="landding_inner">
             <h1 className="title">BESTE TECH EVENT SEARCH  ENGINE</h1>
             <Searchbar />
-            <div className="organizer">organizer</div>
+            <Link href="/myevent">
+              <a>
+                <div className="organizer">organizer</div>
+              </a>
+            </Link>
+            
           </div>
         
         </div>
