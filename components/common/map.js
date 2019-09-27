@@ -26,8 +26,9 @@ const Map = ({ events }) => {
       mapboxApiAccessToken={MAPBOX_TOKEN}
       {...viewport}
       onViewportChange={onViewportChange}
+      mapStyle="mapbox://styles/ismaelocaramelo/ck120kqk906c11ck54l3n0hmf"
     >
-      {events && events.map(event => Marker({ event, setPopupInfo }))}
+      {events && events.map(event => <Marker event={event} setPopupInfo={setPopupInfo} />)}
       <Popup popupInfo={popupInfo} setPopupInfo={setPopupInfo} />
     </ReactMapGL>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Layout, Map, EventList, Searchbar, City }  from '../../common';
+import { Layout, Map, EventList, Searchbar, City } from '../../common';
 import '../../../styles/pages/events.scss';
 
 const Events = () => {
@@ -20,11 +20,9 @@ const Events = () => {
       <Layout>
         <div className="eventsPage">
           <Searchbar />
-          <City name='madrid' />
-          <div className="eventsList">
-            {data && data.map(EventList)}
-          </div>
-          <Map />
+          <City name="madrid" />
+          <div className="eventsList">{data && data.map(EventList)}</div>
+          <Map events={data} />
         </div>
       </Layout>
     </>
