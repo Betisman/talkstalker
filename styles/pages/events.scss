@@ -1,28 +1,31 @@
-.eventsPage{
-    display: grid;
-    padding: 15px;
-    grid-template-rows: 60px;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 'space space' 'search search' 'city city' 'filter filter' 'list map';
-    grid-column-gap: 25px;
-    grid-row-gap: 50px;
-    overflow: hidden;
+.eventsPage {
+  display: grid;
+  padding: 15px;
+  grid-template-rows: 60px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: 'space space' 'search search' 'city city' 'filter filter' 'list map';
+  grid-column-gap: 25px;
+  grid-row-gap: 50px;
+  overflow: hidden;
 
-    .searchbar{
-        grid-area: search;
-    }
-    .city{
-        grid-area: city;
-        text-transform: capitalize;
-        font-size: 50px;
-        font-weight: bolder;
-    }
-    .eventsList{
-        grid-area: list;
-    }
-    .mapGraphContainer{
-        grid-area: map;
-        position: relative;
-        top:0;
-    }
+  .searchbar {
+    grid-area: search;
+  }
+  .city {
+    grid-area: city;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .eventsList {
+    grid-area: list;
+    margin-right: 15px;
+    height: 900px;
+    overflow: scroll;
+  }
+  .mapGraphContainer {
+    grid-area: map;
+    position: relative;
+    top: 0;
+  }
 }

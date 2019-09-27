@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
-import { SearchContext } from '../../context';
+import React from 'react';
 import '../../styles/common/eventsList.scss';
 
 const eventList = event => {
-  const { city } = useContext(SearchContext);
   return (
     <div className="eventsListItem" key={`${event.name}`}>
       <div className="eventImg">
