@@ -18,6 +18,7 @@ const Speakers = () => {
           </figure>
           <div className="speakerDetail">
             <h3>Felipe</h3>
+            <p>Fun-tional Programming</p>
           </div>
         </div>
        
@@ -33,6 +34,7 @@ const Speakers = () => {
           </figure>
           <div className="speakerDetail">
             <h3>Ulises</h3>
+            <p>Hacking the humankind</p>
           </div>
         </div>
 
@@ -47,7 +49,8 @@ const Speakers = () => {
             </div>
           </figure>
           <div className="speakerDetail">
-            <h3>victor</h3>
+            <h3>Víctor</h3>
+            <p>10 steps to win a Hackathon</p>
           </div>
         </div>
         
