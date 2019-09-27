@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from './modal';
 import '../../styles/common/eventsList.scss';
 
 const eventList = event => {
@@ -16,6 +17,7 @@ const eventList = event => {
         <p>end date: {new Date(event.endDate).toLocaleDateString()}</p>
         <p>{event.city}</p>
         <p>{event.twitter}</p>
+        <Modal />
       </div>
     </div>
   );

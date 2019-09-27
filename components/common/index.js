@@ -7,4 +7,7 @@ import Marker from './marker';
 import Popup from './popup';
 import City from './City';
 
-export { Layout, Map, EventList, Searchbar, Marker, Popup, City };
+import Modal from './modal';
+import Form from './form';
+
+export { Layout, Map, EventList, Searchbar, Marker, Popup, City, Modal, Form };
