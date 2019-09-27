@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL, { GeolocateControl } from 'react-map-gl';
 
 import { Marker, Popup } from '.';
 
@@ -14,25 +14,10 @@ const Map = ({ events }) => {
     height: '100vh',
     latitude: 47.498382,
     longitude: 19.040471,
-    zoom: 8
+    zoom: 5
   });
 
-  const [top, setTop] = useState();
-
   const map = useRef(null);
-
-  useEffect(()=>{
-    // if(map) {
-    //   const topPosition = map.current.getBoundingClientRect().top;
-    //   setTop(topPosition);
-    //   document.addEventListener('scroll', ()=>{
-    //     const topPosition = map.current.getBoundingClientRect().top;
-    //     setTop(topPosition);
-    //   });
-    // }
-   
-  }, []);
-
 
   const onViewportChange = viewport => {
     setViewport(viewport);
@@ -49,6 +34,17 @@ const Map = ({ events }) => {
         >
           {events && events.map(event => <Marker event={event} setPopupInfo={setPopupInfo} />)}
           <Popup popupInfo={popupInfo} setPopupInfo={setPopupInfo} />
+          <GeolocateControl
+            style={{
+              position: 'absolute',
+              padding: '10px',
+              left: '15px',
+              top: '15px',
+              background: 'rgba(255,255,255,0.3)'
+            }}
+            positionOptions={{ enableHighAccuracy: true }}
+            trackUserLocation
+          />
         </ReactMapGL>
       </div>
     </div>
