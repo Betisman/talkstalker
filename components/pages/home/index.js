@@ -15,6 +15,7 @@ const Home = () => {
           <div className="landding_inner">
             <h1 className="title">BESTE TECH EVENT SEARCH  ENGINE</h1>
             <Searchbar />
+            <div className="organizer">organizer</div>
           </div>
         
         </div>

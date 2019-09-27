@@ -6,7 +6,12 @@ import '../../styles/common/layout.scss';
 const Layout = ({ children }) => {
   return (
     <div className="layout">
-      <img src="/static/svg/LOGO.svg" alt="logo" className="logo" />
+      <Link href='/'>
+        <a>
+          <img src="/static/svg/LOGO.svg" alt="logo" className="logo" />
+        </a>
+      </Link>
+      
       <nav>
         <ul>
           <li>
